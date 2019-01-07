@@ -1,4 +1,12 @@
 #include <stdio.h>
+//     ⚪   
+//       ╲ 
+//        ╲
+//    ⚪→→⚪y = w1*x1+w2*x2+w3*x3 + b
+//        ╱
+//       ╱
+//     ⚪
+
 #define NUM 6 //训练样本个数
 #define INPUT_NUM 3//特征数
 #define ABS(x) (x > 0 ? x : -x)
@@ -16,7 +24,7 @@ void main()
 	float Dw[INPUT_NUM] = {0};
 	float Db[INPUT_NUM] = {0};
 	float error = 0;
-	float x = 0,y = 0,z = 0;
+	float x = 0,y = 0;
 	float max = 0;
 	while(n)
 	{
